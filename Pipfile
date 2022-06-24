@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+opencv-python = "*"
+imutils = "*"
+python-multipart = "*"
+
+[dev-packages]
+wheel = "*"
+twine = "*"
+certifi = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.9"
