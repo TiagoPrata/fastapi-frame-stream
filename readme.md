@@ -2,6 +2,10 @@
 
 Package to easily stream individual frames using FastAPI
 
+## Requirements
+
+pipenv lock --requirements > requirements.txt
+
 ## To execute the setup
 
 pipenv run python setup.py sdist bdist_wheel

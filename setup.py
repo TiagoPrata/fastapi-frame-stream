@@ -1,5 +1,10 @@
 import setuptools
 
+install_requires = []
+install_requires.append('imutils')
+install_requires.append('opencv-python')
+install_requires.append('python-multipart')
+
 setuptools.setup(
     name="fastapi_frame_stream",
     version="0.1.0",
@@ -13,5 +18,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Intended Audience :: Developers",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.7',
+    install_requires=install_requires
 )
