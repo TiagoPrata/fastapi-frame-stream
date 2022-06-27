@@ -99,8 +99,8 @@ Any client can view a published image (MJPEG) stream using a simple ```<img>``` 
 
 It is possible to upload an image file directly...
 
-![Server and client](https://raw.githubusercontent.com/TiagoPrata/fastapi-frame-stream/master/_readme_imgs/usage001.gif)
+![Server and client](https://raw.githubusercontent.com/TiagoPrata/fastapi-frame-stream/main/_readme_imgs/usage001.gif)
 
 ... or to use any kind of application to convert the frames to base64 and send it to the web server:
 
-![Server and client](https://raw.githubusercontent.com/TiagoPrata/fastapi-frame-stream/master/_readme_imgs/usage002.gif)
+![Server and client](https://raw.githubusercontent.com/TiagoPrata/fastapi-frame-stream/main/_readme_imgs/usage002.gif)
