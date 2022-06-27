@@ -4,6 +4,8 @@ Package to easily stream individual frames (MJPEG) using FastAPI.
 
 FastAPI server for publishing and viewing MJPEG streams.
 
+Raw image files and images as base64 strings can be sent to a 'video stream' and then consumed by any client.
+
 ## Quick start
 
 ### Installing
@@ -104,3 +106,18 @@ It is possible to upload an image file directly...
 ... or to use any kind of application to convert the frames to base64 and send it to the web server:
 
 ![Server and client](https://raw.githubusercontent.com/TiagoPrata/fastapi-frame-stream/main/_readme_imgs/usage002.gif)
+
+<h4><i>How it works</i></h4>
+
+<details>
+<summary></summary>
+
+The frames sent throught the web server are stored in a temporary (in memory) SQLite DB...
+
+![User sending frame](./_readme_imgs/sending_frame.png)
+
+... and the last frame of each stream is retrieved everytime a client wants to visualize the stream.
+
+![Retrieving stream](./_readme_imgs/getting_stream.png)
+
+</details>
