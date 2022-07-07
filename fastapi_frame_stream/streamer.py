@@ -16,7 +16,7 @@ from fastapi.responses import StreamingResponse
 __author__ = "Tiago Prata"
 __credits__ = ["Tiago Prata"]
 __license__ = "MIT"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __maintainer__ = "Tiago Prata"
 __email__ = "prataaa@hotmail.com"
 __status__ = "Beta version"
@@ -149,6 +149,7 @@ class FrameStreamer:
 
         while True:
             time.sleep(sleep_duration)
+            frame = None
             try:
                 frame = self._readb64(self._get_image(img_id))
             except:

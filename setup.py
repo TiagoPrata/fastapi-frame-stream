@@ -15,7 +15,7 @@ install_requires.append('python-multipart')
 
 setuptools.setup(
     name="fastapi_frame_stream",
-    version="0.1.0",
+    version="0.1.1",
     author="Tiago Prata",
     author_email="prataaa@hotmail.com",
     description="Package to easily stream individual frames (MJPEG) using FastAPI",
